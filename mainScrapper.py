@@ -2,7 +2,7 @@
 """
 Created on Thu Oct 29 01:11:17 2020
 
-@author: Jonathan Yepez
+@author: Jonathan A. Yepez M.
 """
 import requests
 from bs4 import BeautifulSoup
