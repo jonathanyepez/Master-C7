@@ -44,9 +44,9 @@ def oferta(title, summary, salary, city, company):
     return string
 
 
-tipos_contrato=["indefinido","por servicio", "eventual", "de interinidad", "de relevo", "de formacion", "practicas"]
+tipos_contrato=["indefinido","por servicio", "eventual", "de interinidad", "de relevo", "de formacion", "practicas"] #EDITABLE
 skills=["adaptabilidad","análisis","creatividad","comunicación","compromiso","control","tolerancia","flexibilidad",
-        "independencia","iniciativa","liderazgo","organización","tenacidad","trabajo en equipo"]
+        "independencia","iniciativa","liderazgo","organización","tenacidad","trabajo en equipo"] #EDITABLE
 
 def caract(exper): #experiencia is a value from pandas_row though
     string = '"Caracteristicas":{'
