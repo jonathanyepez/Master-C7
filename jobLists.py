@@ -12,7 +12,7 @@ import pandas as pd
 import random
 #Initialize all important variables
 
-profesiones=["Ingeniero","Profesor","Medico","Abogado","Analista","Psicologo","Vendedor","Manager","Constructor","Diseñador"]
+profesiones=["Profesor","Medico","Abogado","Constructor"] #EDITABLE
 
 TITLES=[]
 LINKS=[]
@@ -33,7 +33,7 @@ for profesion in profesiones:
     
 for i in range(len(COMPANIES)):
     if COMPANIES[i]=="[]":
-        COMPANIES[i]="N.A."
+        COMPANIES[i]="N.A." #EDITABLE
         
 #========================================================================================
 #Extract the data randomly generated from the internet (Names, Cities, DNI's, etc)
@@ -54,7 +54,7 @@ df_apellido = df_a1.append(df_a2[0:50], ignore_index=True)
 del df_a1, df_a2
 
 def get_email(nombre, apellido):
-    dominios=["@gmail.com","@hotmail.com","@outlook.com","@yahoo.com"]
+    dominios=["@gmail.com","@hotmail.com","@outlook.com","@yahoo.com"] #EDITABLE
     email = nombre[0:2].lower()+apellido.lower()+random.choice(dominios)
     return email
 
@@ -108,7 +108,7 @@ for i in range(entries):
 
 #Create JSON File to be used in MongoDB
 
-f = open("data.json","a", encoding='utf-8') #we create a JSON file called data
+f = open("data.json","a", encoding='utf-8') #we create a JSON file called 'data' #EDITABLE
 f.write("[\n") #specify the beginning of the list of documents
     
 for j in range(len(JOBS)-1): #use all the elements from JOBS but the last one
