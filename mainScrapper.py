@@ -97,7 +97,7 @@ def get_salary(div):
                 flag=1
         #return salary
     except:
-        salary=float(random.randint(12000,48000)) #get random salaries between 12k and 48k
+        salary=float(random.randint(12000,48000)) #get random salaries between 12k and 48k #EDITABLE
     return salary 
 
 def get_jobs(div_list):
